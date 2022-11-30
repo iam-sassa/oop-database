@@ -1,0 +1,17 @@
+{
+        "name": "back-end/oop-database",
+        "description": "PHP",
+        "type": "project",
+        "authors": [
+            {
+                "name": "sitinurelysaa",
+                "email": "sitinurelysaa@gmail.com"
+
+            }
+        ],
+        "autoload": {
+            "psr-4": {
+                "OOP\\App\\" : "App"
+            }
+        }
+}

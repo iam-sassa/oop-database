@@ -1,0 +1,15 @@
+#Mengaktifkan Rewrite
+RewriteEngine On
+
+#membuat aturan rewrite
+#NC not case sensitive
+#L last row
+RewriteRule ^show/([0-9a-zA-Z]+) index.php?page=show&id=$1 [NC,L]
+RewriteRule ^delete/([0-9a-zA-Z]+) index.php?page=delete&id=$1 [NC,L]
+RewriteRule ^update/([0-9a-zA-Z]+) index.php?page=update&id=$1 [NC,L]
+
+#Redirect jika error
+ErrorDocument 404 /BACK-END/oop-database/404.html
+
+#Redirect folder lama folder baru
+Redirect /BACK-END/oop-database/lama.php /BACK-END/oop-database/baru.php
